@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="weather-box">
+            <div class="row1">
+                <h2 class="weather-location"></h2>
+                <canvas class="weatherType" id="icon1" width="128" height="128"></canvas>
+            </div>
+            <div class="row2">
+                <h1 class="temp"></h1>
+                <span class="temp-type">°C</span>
+            </div>
+            <h2 class="weather-description"></h2>
+            <p class="made-by">Made by Imran M with FFC WEATHER API.</p>
+        </div>
+    </div>
+     <div id="searchContainer">
+            <input class="searchControl" type="text" placeholder="City Name or Zipcode" id="searchInput">
+            <button class="searchControl" id="searchBtn">Search</button>
+        </div>
+        <div id="weatherContainer">
+            <div id="weatherDescription">
+                <h1 id="cityHeader"></h1>
+                <div id="weatherMain">
+                    <div id="temperature"></div>
+                    <div id="weatherDescriptionHeader"></div>
+                    <div><img id="documentIconImg"></div>
+                </div>
+                <hr>
+                <div id="windSpeed" class="bottom-details"></div>
+                <div id="humidity" class="bottom-details"></div>
+            </div>
+        </div>
+    <script src="./assets/js/script.js" ></script>
+    <script src="./assets/js/skycons.js"></script>
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+    
+</body>
+</html>
